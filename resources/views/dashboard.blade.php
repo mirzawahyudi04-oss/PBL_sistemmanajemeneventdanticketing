@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboard Admin - Steven.id</title>
-</head>
-<body>
-    <h1>Admin Dashboard - Manajemen Tiket</h1>
-    <p>Selamat Datang, Admin!</p>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Nama Event</th>
-                <th>Stok Tiket</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Konser Musik Rock</td>
-                <td>50</td>
-                <td><button>Edit</button> <button>Hapus</button></td>
-            </tr>
-        </tbody>
+@extends('layouts.app')
+
+@section('content')
+    <h1>Dashboard Admin</h1>
+    <table border="1" width="100%">
+        <tr>
+            <th>Nama Event</th>
+            <th>Terjual</th>
+        </tr>
+        <tr>
+            <td>Konser Musik P4</td>
+            <td>12 Tiket</td>
+        </tr>
     </table>
-    <br>
-    <a href="/home">Kembali ke Beranda</a>
-</body>
-</html>
+@endsection
